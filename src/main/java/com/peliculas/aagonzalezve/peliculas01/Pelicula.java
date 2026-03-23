@@ -11,7 +11,7 @@ public class Pelicula {
     private String genero;
     private String sinopsis;
 
-    public Pelicula(int id, int año, String titulo, String director, String genero, String sinopsis) {
+    public Pelicula(int id, String titulo, int año,  String director, String genero, String sinopsis) {
         this.id = id;
         this.año = año;
         this.titulo = titulo;
@@ -24,7 +24,7 @@ public class Pelicula {
         return id;
     }
 
-    public int getAnio() {
+    public int getAño() {
         return año;
     }
 
@@ -32,11 +32,11 @@ public class Pelicula {
         return titulo;
     }
 
-    public String getdir() {
+    public String getDirector() {
         return director;
     }
 
-    public String getGen() {
+    public String getGenero() {
         return genero;
     }
 
@@ -44,13 +44,17 @@ public class Pelicula {
         return sinopsis;
     }
 
+    public void setAño(int año) {
+        this.año = año;
+    }
+    
+    public void setDirector(String director) {
+        this.director = director;
+    }
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
-    }
 
     public void setGenero(String genero) {
         this.genero = genero;
